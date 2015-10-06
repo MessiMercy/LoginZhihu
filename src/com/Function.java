@@ -139,8 +139,8 @@ public class Function {
 			post.setConfig(config);
 			HttpEntity entity = null;
 			try {
-				post.setEntity(entity);
 				entity = new UrlEncodedFormEntity(list, "utf-8");
+				post.setEntity(entity);
 				request = post;
 			} catch (UnsupportedEncodingException e) {
 				e.printStackTrace();
